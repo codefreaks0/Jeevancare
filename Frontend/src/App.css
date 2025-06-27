@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Ensure full document scrolling */
+}
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  /* padding: 0; */
+  text-align: center;
+  max-width: 100vw;
+  width: 100vw;
+  height: 100%; /* Ensure root takes full height for content */
+  overflow: unset; /* Allow content to overflow into scrollable body */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: unset; /* Allow App content to overflow into root/body */
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 2rem;
+  color: white;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  flex: 1;
+  /* padding: 2rem; */
+  /* max-width: 1200px; */
+  margin: 0;
+  width: 100%;
+  overflow: unset; /* Allow main content to overflow its container */
+}
+
+h2 {
+  color: #282c34;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}

@@ -1,0 +1,207 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+
+.home-page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(180deg, #21AAFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Profile Section */
+.profile-picture {
+  position: absolute;
+  width: 134px;
+  height: 134px;
+  left: 198px;
+  top: 81px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-left: 59px;
+}
+
+.profile-info {
+  width: 134px;
+  position: absolute;
+  top: 81px;
+  left: 198px;
+  height: 134px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #221F1F;
+  top: 24px;
+  left: -187px;
+  position: absolute;
+  width: 172px;
+  height: 36px;
+  align-items: center;
+  line-height: 36px;
+  font-weight: 1500;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 30px;
+}
+
+.dr-name {
+  position: absolute;
+  width: 99px;
+  height: 18px;
+  left: -163px;
+  top: 57px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  color: #221F1F;
+}
+
+.question-text{
+  position: absolute;
+  width: 147px;
+  height: 20px;
+  left: -163px;
+  top: 86px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: rgb(0 0 0 / 50%);
+}
+
+/* AI Doctor Button */
+.consult-button {
+  
+  position: absolute;
+  top: 287px;
+  left: 60px;
+  width: 300px;
+  height: 40px;
+  background: #EAF6FF;
+  border-radius: px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #221f1f;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Health Services */
+.health-services-title {
+  position: absolute;
+  top: 355px;
+  left: 36px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  z-index: 1;
+}
+
+.services-card {
+  position: absolute;
+  top: 270px;
+  left: 0;
+  width: 100%;
+  height: 544px;
+  background: #ffffff;
+  padding: 0 26px;
+  box-sizing: border-box;
+  border-radius: 11px;
+}
+
+
+.services-grid {
+  left: 26px;
+  margin-top: 112px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 16px;
+  background: white;
+  border-radius: 11px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  background: transparent;
+  border-radius: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  font-size: 24px;
+  /* SVGs will be placed here via JSX */
+}
+
+.service-label {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Bottom Navigation Bar */
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 79px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  z-index: 10;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #888;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  color: #21aaff;
+}
+
+.nav-icon {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
